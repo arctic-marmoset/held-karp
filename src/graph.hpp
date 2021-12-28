@@ -16,6 +16,7 @@ namespace bhk
 class graph
 {
 public:
+    // This is marked explicit to prevent constructing the class with a braced initialization list.
     explicit graph(std::vector<std::string> nodes, bhk::adjacency_matrix distances)
         : _nodes(std::move(nodes))
         , _distance(std::move(distances))
